@@ -1,0 +1,190 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+
+
+/*Google Fonts: Montserrat Alternates SemiBold 600 Italic- Para usar en h1
+*/
+
+h1,h2,h3,p,button {font-family: 'Oleo Script', cursive;
+
+}
+
+
+
+
+
+/* Para celulares: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Para PC: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+
+h1{
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+
+
+h2{
+    background-color: lightblue;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+h3{
+    color: grey;
+    padding-top: 1px;
+    padding-bottom: 1px;                    
+    margin: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+
+
+}
+
+
+
+
+p.datospersonales{
+        color: grey;
+        font-size: 30px;
+        margin: 30px;
+    
+}
+
+
+
+p.experiencia{
+        color: grey;
+        font-size: 25px;
+        margin: 30px;
+        line-height: 1;
+}
+
+
+p.habilidades{
+        color: grey;
+        font-size: 25px;
+        margin: 30px;
+        line-height: 1;
+
+}
+
+
+
+p.bottom{
+        padding-bottom: 100px;
+}
+
+
+
+
+p.hobbies{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+    
+}
+
+
+
+p.deportes{
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+    
+}
+
+
+
+
+
+
+
+
+
+img{
+    border: 1px;
+    padding-top:50px;
+    margin: 30px;
+    height: 450px;
+    width: 450px;
+    text-align: center;
+
+}
+
+
+button {
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.boton1{
+    background-color: blue;
+    color: white;  
+
+}
+
+.boton2{
+    background-color: red;
+    color: white;  
+
+}

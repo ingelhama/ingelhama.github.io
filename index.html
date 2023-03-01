@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum</title>
+    <link rel="stylesheet" type="text/css" href="estiloscv.css"/>
+
+    
+    
+
+   <!--
+Google Fonts: Oleo Script Reglar 400- Para usar en h1, h2, h3, p
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>CURRICULUM VITAE</h1>
+
+
+
+<div class="col-8">
+
+        <h2>DATOS PERSONALES</h2>
+
+        <p class="datospersonales" id="nombre"></p>
+        <p class="datospersonales" id="apellido"></p>
+        <p class="datospersonales" id="edad"></p>
+        <p class="datospersonales" id="direccion"></p>
+        <p class="datospersonales" id="email"></p>
+        <p class="datospersonales" id="movil"></p>
+
+
+</div>
+
+
+<div class="col-4">
+        <img src="https://randomuser.me/api/portraits/women/32.jpg"/>
+</div>
+
+                                                                                                                             
+
+
+<!--
+JASON.parse de los datos obtenidos de la web Random User Generator
+con AJAX
+-->
+    <script>
+        const randomuser='{"firstname":"Christa","lastname":"Gericke","streetnumber":4105,"streetname":"Poststraße","city":"Iserlohn","state":"Hessen","country":"Germany","postcode":10205,"email":"christa.gericke@example.com","dob":"1974-05-05","age":48,"phone":"0394-6395921","cell":"0170-0238330"}';
+        
+     
+
+            const obj = JSON.parse(randomuser);
+            console.log(obj);
+            document.getElementById("nombre").innerHTML = 
+            "Nombre: "+obj.firstname;
+            document.getElementById("apellido").innerHTML =
+            "Apellido: "+obj.lastname;
+            document.getElementById("edad").innerHTML =
+            "Edad: "+obj.age +" años";
+            document.getElementById("direccion").innerHTML =
+            "Dirección: "+obj.streetnumber +" " +obj.streetname +", "+obj.city +", " +obj.state +", " +obj.country; 
+            document.getElementById("email").innerHTML =
+            "E-mail: "+obj.email;
+            document.getElementById("movil").innerHTML =
+            "Movil: "+obj.cell;
+    
+
+    </script>
+
+
+<div class="col-12">
+
+        <h2>EXPERIENCIA</h2>
+
+        <h3>Diseñadora Web</h3>
+        <h3>Banco Santander</h3>
+        <h3>Enero 2016 - diciembre 2022</h3>
+
+
+        <p class="experiencia">- Realización del diseño de más de 120 páginas web para el portal oficial de Santander.</p>
+        <p class="experiencia">- Colaboración con equipos de UX y de copywriting para crear sitios web óptimos para los usuarios.</p>
+        <p class="experiencia">- Desarrollo del manual de identidad visual del equipo de diseño, el cual ha sido usado como guía durante los últimos 2 años.</p>
+        <p class="experiencia bottom">- Las páginas web que diseñé obtuvieron un 10% más de tráfico que el resto de las páginas del sitio.</p>
+    
+
+        <h3>Diseñadora Web Jr.</h3>
+        <h3>Seguros Amerita</h3>
+        <h3>Junio 2015 - diciembre 2016</h3>
+
+        <p class="experiencia">- Responsable de las actualizaciones periódicas de la página principal de Seguros Amerita.</p>
+        <p class="experiencia">- Desarrollé una plataforma de e-commerce que elevó las ventas online en un 15%.</p>
+        <p class="experiencia">- Mis diseños elevaron el tiempo de permanencia de los usuarios en un 5%.</p>
+        <p class="experiencia bottom">- Diseñé más de 200 imágenes promocionales que fueron utilizadas tanto en el sitio web como en otras plataformas de comunicación digital de la empresa.</p>
+
+
+
+        <h2>HABILIDADES</h2>
+
+        <p class="habilidades">- Facilidad para hablar frente a un grupo.</p>
+        <p class="habilidades">- Capacidad para dirigir a otros.</p>
+        <p class="habilidades">- Claridad para explicar.</p>
+        <p class="habilidades">- Perfil analítico para descubrir conexiones entre diferentes problemas.</p>
+        <p class="habilidades bottom">- Creatividad para solucionar problemas.</p>\
+
+
+
+
+</div>
+
+
+<div class="col-3">
+
+
+        <button class="boton1" id="botonhobbies">"Mostrar Hobbies"</button> 
+        <button class="boton2" id="botondeportes">"Mostrar Deportes"</button>
+
+
+</div>
+
+<div class="col-2">
+
+<p class="hobbies" id="hobbies1">  </p>
+<p class="hobbies" id="hobbies2">  </p>
+<p class="hobbies" id="hobbies3">  </p>
+<p class="hobbies" id= "hobbies4">  </p>
+<p class="hobbies" id="hobbies5">  </p>
+
+</div>
+
+
+<div class="col-4">
+
+<p class="deportes" id="deportes1">  </p>
+<p class="deportes"  id="deportes2">  </p>
+<p class="deportes" id="deportes3">  </p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="functioncv.js"></script> 
+
+
+
+</body>
+
+</html>
